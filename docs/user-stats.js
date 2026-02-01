@@ -60,10 +60,11 @@ class UserProfile {
     }
 
     getSelectionWeight(questionNumber) {
-        const stats = this.getQuestionStats(questionNumber);
+        // Check if question exists without creating it
+        const stats = this.questionStats[questionNumber];
         
         // Never asked questions get highest priority
-        if (stats.times_asked === 0) {
+        if (!stats || stats.times_asked === 0) {
             return 10.0;
         }
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SRC Prüfungssimulation - Short Range Certificate">
+    <meta name="theme-color" content="#2980b9">
+    <title>SRC Prüfung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="startScreen" class="screen active">
+        <div class="container">
+            <h1>SRC Prüfungssimulation</h1>
+            <h2>Short Range Certificate</h2>
+            
+            <div class="info-box">
+                <p><strong>Prüfungsbedingungen:</strong></p>
+                <ul>
+                    <li>24 Fragen werden zufällig ausgewählt</li>
+                    <li>Zum Bestehen: 19 von 24 Fragen richtig</li>
+                    <li>Antworten in zufälliger Reihenfolge</li>
+                    <li>Keine Zeitbegrenzung</li>
+                </ul>
+                <p><strong>Viel Erfolg!</strong></p>
+            </div>
+            
+            <div id="userStats" class="user-stats"></div>
+            
+            <button id="startButton" class="btn btn-primary">Prüfung starten</button>
+            
+            <div class="profile-buttons">
+                <button id="showStatsButton" class="btn btn-secondary">Statistik anzeigen</button>
+                <button id="resetStatsButton" class="btn btn-danger">Statistik zurücksetzen</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exam Screen -->
+    <div id="examScreen" class="screen">
+        <div class="container">
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+                <span id="progressText" class="progress-text">Frage 1 von 24</span>
+            </div>
+            
+            <div class="question-container">
+                <h3 id="questionNumber">Frage 1:</h3>
+                <p id="questionText" class="question-text"></p>
+                
+                <div id="answersContainer" class="answers-container"></div>
+                
+                <button id="nextButton" class="btn btn-primary">Nächste Frage</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Screen -->
+    <div id="feedbackScreen" class="screen">
+        <div class="container">
+            <div class="progress-bar">
+                <div id="feedbackProgressFill" class="progress-fill"></div>
+                <span id="feedbackProgressText" class="progress-text">Frage 1 von 24</span>
+            </div>
+            
+            <h2 id="feedbackHeader" class="feedback-header"></h2>
+            
+            <div class="question-container">
+                <p id="feedbackQuestionText" class="question-text-small"></p>
+                
+                <div id="feedbackAnswersContainer" class="answers-container"></div>
+                
+                <button id="continueButton" class="btn btn-primary">Weiter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="resultsScreen" class="screen">
+        <div class="container">
+            <div class="results-box">
+                <h2 id="resultStatus" class="result-status"></h2>
+                <p id="resultScore" class="result-score"></p>
+                <p id="resultPercentage" class="result-percentage"></p>
+                <p class="result-info">(Mindestens 19 richtige Antworten erforderlich)</p>
+                
+                <div class="result-buttons">
+                    <button id="newExamButton" class="btn btn-primary">Neue Prüfung</button>
+                    <button id="backToStartButton" class="btn btn-secondary">Zurück</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Popup -->
+    <div id="statsPopup" class="popup">
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+            <h2>Lernstatistik</h2>
+            <div id="statsContent" class="stats-content"></div>
+            <button id="closeStatsButton" class="btn btn-primary">Schließen</button>
+        </div>
+    </div>
+
+    <script src="user-stats.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

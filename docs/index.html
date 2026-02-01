@@ -29,13 +29,13 @@
                 <p><strong>Viel Erfolg!</strong></p>
             </div>
             
-            <div id="userStats" class="user-stats"></div>
+            <div class="user-stats"></div>
             
-            <button id="startButton" class="btn btn-primary">Prüfung starten</button>
+            <button id="startExamBtn" class="btn btn-primary">Prüfung starten</button>
             
             <div class="profile-buttons">
-                <button id="showStatsButton" class="btn btn-secondary">Statistik anzeigen</button>
-                <button id="resetStatsButton" class="btn btn-danger">Statistik zurücksetzen</button>
+                <button id="viewStatsBtn" class="btn btn-secondary">Statistik anzeigen</button>
+                <button id="resetStatsBtn" class="btn btn-danger">Statistik zurücksetzen</button>
             </div>
         </div>
     </div>
@@ -44,8 +44,8 @@
     <div id="examScreen" class="screen">
         <div class="container">
             <div class="progress-bar">
-                <div id="progressFill" class="progress-fill"></div>
-                <span id="progressText" class="progress-text">Frage 1 von 24</span>
+                <div class="progress-fill"></div>
+                <span class="progress-text">Frage 1 von 24</span>
             </div>
             
             <div class="question-container">
@@ -54,7 +54,7 @@
                 
                 <div id="answersContainer" class="answers-container"></div>
                 
-                <button id="nextButton" class="btn btn-primary">Nächste Frage</button>
+                <button id="nextQuestionBtn" class="btn btn-primary">Nächste Frage</button>
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@
                 
                 <div id="feedbackAnswersContainer" class="answers-container"></div>
                 
-                <button id="continueButton" class="btn btn-primary">Weiter</button>
+                <button id="continueBtn" class="btn btn-primary">Weiter</button>
             </div>
         </div>
     </div>
@@ -89,8 +89,8 @@
                 <p class="result-info">(Mindestens 19 richtige Antworten erforderlich)</p>
                 
                 <div class="result-buttons">
-                    <button id="newExamButton" class="btn btn-primary">Neue Prüfung</button>
-                    <button id="backToStartButton" class="btn btn-secondary">Zurück</button>
+                    <button id="newExamBtn" class="btn btn-primary">Neue Prüfung</button>
+                    <button id="backToStartBtn" class="btn btn-secondary">Zurück</button>
                 </div>
             </div>
         </div>
@@ -101,8 +101,8 @@
         <div class="popup-overlay"></div>
         <div class="popup-content">
             <h2>Lernstatistik</h2>
-            <div id="statsContent" class="stats-content"></div>
-            <button id="closeStatsButton" class="btn btn-primary">Schließen</button>
+            <div class="stats-content"></div>
+            <button id="closeStatsBtn" class="btn btn-primary">Schließen</button>
         </div>
     </div>
 

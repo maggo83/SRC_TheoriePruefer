@@ -1446,14 +1446,14 @@
       "Navigationswarnungen, Meteorologische Warnungen und SAR-Meldungen",
       "Navigationswarnungen, Wettervorhersagen und SAR-Meldungen",
       "Sat-Nav-Warnungen, Meteorologische Warnungen und Navigationswarnungen",
-      "Meteorologische Warnungen, Revierinformationen und SAR-Meldungen 122 . In welcher Sprache werden Nachrichten für die Sicherheit der Seeschifffahrt (MSI) im NAVTEXDienst auf 490 kHz verbreitet?"
+      "Meteorologische Warnungen, Revierinformationen und SAR-Meldungen"
     ],
     "correct_answer": 0,
     "source": "Fragenkatalog-SRC-Pruefung-Seefunkzeugnis.pdf"
   },
   {
     "number": 122,
-    "question": "im NAVTEX-Dienst auf 490 kHz verbreitet?",
+    "question": "In welcher Sprache werden Nachrichten für die Sicherheit der Seeschifffahrt (MSI) im NAVTEXDienst auf 490 kHz verbreitet?",
     "answers": [
       "Landessprache der Funkstelle",
       "Englisch",
@@ -1743,7 +1743,7 @@
     "number": 146,
     "question": "Wer fordert in einem Seenotfall eine störende Funkstelle mit den Wörtern SILENCE MAYDAY zur Einhaltung der Funkstille auf?",
     "answers": [
-      "Die Funkstelle, die Funkstelle, die den Notverkehr leitet",
+      "Die Funkstelle, die den Notverkehr leitet",
       "Die Funkstelle in Not oder eine Hilfe leistende Luftfunkstelle",
       "Die Funkstelle, die die störende Funkstelle als erste empfangen hat",
       "Die Funkstelle, die der störenden Funkstelle nächstgelegen ist"
